@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Web Dream
+  </title>
+  <link rel='stylesheet' href='stylesheets/style.css' />
+  <link rel='stylesheet' href='stylesheets/login-signup.css' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css" />
+</head>
+
+<body>
+  <div class="ui large top fixed pointing menu">
+    <a id="home" class="item" href="/">
+      Home
+    </a>
+    <a id='hosting' class="item" href="/hosting">
+      Hosting
+    </a>
+    <a class="item" href="/design">
+      Design
+    </a>
+    <div class="right menu">
+      <a class="ui item" href="/cart">
+        <i class="shopping cart icon"></i>
+        Cart
+      </a>
+      <a class="ui item" id="loginBtn" href="#">
+        <i class="user outline icon"></i>
+        Login
+      </a>
+      <a class="ui item" href="#">
+        <div id="sign-up-btn" class="ui green button">
+          Sign Up
+          <i class="long arrow alternate right icon"></i>
+        </div>
+
+      </a>
+      <a class="ui item" href="/user/logout">
+        Logout
+      </a>
+      <a class="ui item" href="/user/panel">
+        User-Panel
+      </a>
+      <a class="ui item" href="/admin">
+        Admin
+      </a>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <!-- Modal for login form -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="page-login">
+          <div class="ui centered grid container">
+            <div class="nine wide column">
+              <div class="ui fluid card">
+                <div class="content">
+                    <div class="login-header">
+                      <span class="float-left"><h3>Login</h3></span>
+                      <span class="float-right"><i class="arrow up icon"></i></span>
+                    </div>
+                  <form action="/user/login" class="ui form" method="POST">
+                    <div class="field">
+                      <label>Email</label>
+                      <input type="email" name="username" placeholder="Email Adress">
+                    </div>
+                    <div class="field">
+                      <label>Password</label>
+                      <input type="password" name="password" placeholder="Password">
+                    </div>
+                    <button class="ui primary labeled icon button" type="submit">
+                      <i class="unlock alternate icon"></i>
+                      Login
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Sign-Up form -->
+  <div id="sign-up-model" class="modal">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="page-login">
+            <div class="ui centered grid container">
+              <div class="nine wide column">
+                <div class="ui fluid card">
+                  <div class="content">
+                      <div class="login-header">
+                        <span class="float-left"><h3>Start your journey here!</h3></span>
+                        <span class="float-right"><i class="arrow up icon"></i></span>
+                      </div>
+                    <form action="/user/sign-up" class="ui form" method="POST">
+                      <div class="field">
+                        <label>Email</label>
+                        <input type="text" name="user" placeholder="User">
+                      </div>
+                      <div class="field">
+                        <label>Password</label>
+                        <input type="password" name="pass" placeholder="Password">
+                      </div>
+                      <button class="ui green button button" type="submit">
+                        Sign Up
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

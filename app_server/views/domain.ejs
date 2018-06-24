@@ -1,0 +1,105 @@
+<% include partials/header %>
+    <div class="container">
+        <h1 class="center">Web Dream</h1>
+        <div class="ui one column stackable center aligned page grid">
+            <div class="column sixteen wide">
+                <p>Find the perfect domain name</p>
+                <div class="ui input">
+                    <input id="domain-name-input" type="text" name="domainName" placeholder="Choose a Domain Name">
+                </div>
+            </div>
+            <button onclick="updateDomains()" class="ui button">Check</button>
+        </div>
+    </div>
+
+    <div class="ui container">
+        <div class="ui equal width grid">
+            <div class="ui center aligned column">
+                <h4>Domain</h4>
+            </div>
+            <div class="ui center aligned column">
+                <h4>Status</h4>
+            </div>
+            <div class="ui center aligned column">
+                <h4>Price</h4>
+            </div>
+        </div>
+        <div class="ui equal width grid segment">
+            <div class="ui center aligned column">
+                <p id="domain-name"></p>
+            </div>
+            <div class="ui center aligned column">
+                <p id="domain-status" class=""></p>
+            </div>
+            <div class="ui center aligned column">
+                <p id="domain-price"></p>
+            </div>
+        </div>
+        <hr>
+        <h2>Choose Hosting</h2>
+        <div class="ui form">
+            <div class="grouped fields">
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input id="hosting-button" type="radio" name="example2">
+                        <label>Yes, I want hosting!</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input id="no-hosting" type="radio" name="example2">
+                        <label>No hosting for me!</label>
+                    </div>
+                </div>
+            </div>
+            <form action="/cart/add/domain" method="POST" class="ui">
+                <div id="hosting-form">
+                    <input id="hidden-price" type="hidden" name="domainPrice" value="">
+                    <input id="hidden-name" type="hidden" name="domainName" value="">
+                    <h3>Plans Summary</h3>
+                    <div class="ui equal width stackable grid">
+                        <div class="ui center aligned column segment">
+                            <div id="first" class="ui toggle checkbox">
+                                <input type="checkbox" name="plan" value="Starter">
+                                <label>2.49 per Month</label>
+                            </div>
+                            <h4>Starter</h4>
+                            <hr>
+                            <p>5 GB Storage</p>
+                            <p>Unmetered Bandwidth</p>
+                        </div>
+                        <div class="ui center aligned column segment">
+                            <div id="second" class="ui toggle checkbox">
+                                <input type="checkbox" name="plan" value="All-Rounder">
+                                <label>4.49 per Month</label>
+                            </div>
+                            <h4>All-Rounder</h4>
+                            <hr>
+                            <p>10 GB Storage</p>
+                            <p>Unmetered Bandwidth</p>
+                            <p>Free SSL</p>
+                        </div>
+                        <div class="ui center aligned column segment">
+                            <div id="third" class="ui toggle checkbox">
+                                <input type="checkbox" name="plan" value="Business">
+                                <label>9.49 per Month</label>
+                            </div>
+                            <h4>Business</h4>
+                            <hr>
+                            <p>20 GB Storage</p>
+                            <p>Unmetered Bandwidth</p>
+                            <p>Free SSL</p>
+                            <p>A cookie</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="center" id="checkout-button">
+                    <button class="ui big green button">Checkout</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+
+    <% include partials/footer %>

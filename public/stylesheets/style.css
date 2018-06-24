@@ -1,0 +1,100 @@
+.center {
+    text-align: center;
+}
+
+.margin {
+    margin: 30px 30px;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.spaced-text {
+    letter-spacing: .8em;
+}
+
+#checkout-button {
+    margin: 30px auto;
+}
+
+.success-text {
+    color: green;
+}
+
+.white-text {
+    color: white;
+}
+
+.red-text {
+    color: red;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.grey-background {
+    background-color:rgb(51, 51, 51);
+}
+
+.features {
+    padding-top: 60px;
+}
+
+.icon-image {
+    width: 200px;
+    height: auto;
+}
+
+.home-banner {
+    color: white;
+    background-color:rgb(51, 51, 51);
+    margin-top: 30px;
+    padding: 20px 20px;
+}
+
+.packages {
+    padding-top: 30px;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+
+.inner-banner {
+    width: 90%;
+    margin: 40px 40px;
+}
+
+.sub-text {
+    color: rgb(173, 173, 173);
+}
+
+.invert {
+    color: rgb(173, 173, 173);
+    background-color: rgb(51, 51, 51);
+}
+
+.development-banner {
+    padding: 200px;
+    background-image: url("../images/purple-sky.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(68, 68, 68);
+}
+
+#footer {
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+    padding: 40px;
+    color: rgb(173, 173, 173);
+}
